@@ -12,3 +12,10 @@ This script handles displaying the positive cases in a UI and contains an enum o
 
 ### DataBarDisplay.cs
 This script gets data from DataManger.cs and scales transforms based on a normalized value between the 5 states displayed. 
+  
+
+## Virtual Reality
+Virtual reality is enabled through the legacy integration and has been tested with SteamVR, Oculus desktop and Oculus Quest. It uses the [XR Interaction toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@0.9/manual/index.html) to enable interaction and be able to use the built in Unity UI. 
+
+### VRDataManager.cs
+This script handles the input from the Unity UI dropdowns and changes values on the DataBarDisplay. It uses the Ray interactors from the XR Interaction toolkit. The script adds listener to the DropDown changed event and uses the value of the dropdown index selected to properly set the state code by casting it to the enum value.

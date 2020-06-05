@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/DataViz_VR.unity
+    guid: 5fd8665c53632824aa6292c62dd3b4d2
   m_configObjects: {}
